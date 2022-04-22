@@ -3,25 +3,31 @@
 /*navbar*/
 
 header{
-    border:solid black 1px;
+    position: sticky;
+    top: 0;
+    @extend %bordes; 
     padding-bottom: 0.5%;
+   
 
     nav {  
         display: flex;
         align-items: center;  
         justify-content: center;
         align-content: space-between;    
-         
+        padding-top: 4%;
         ul {
             display: flex;
             flex-direction: row;
             list-style: none;
             font-family: 'Nunito', sans-serif;
+            justify-content: flex-end;
                
                 
             li {
-                padding: 15px;
-                font-size: 1.1rem;
+                display: flex;
+               
+                padding: 30px;
+                font-size: 1.3rem;
                 
 
                 a {
@@ -46,7 +52,7 @@ header{
         align-items: center;
     
                     .icono{
-                        max-width: 40%;
+                        max-width: 45%;
                         
                     }
    
