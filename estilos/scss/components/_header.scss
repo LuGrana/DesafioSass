@@ -1,0 +1,32 @@
+/*header Santa Raqueta*/
+/*navbar*/
+
+.nav {
+   
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        
+        li {
+            font-size: 1.25rem;
+            display: flex;
+            
+            padding: 2px;
+            max-width: 100%;
+            .itemmenu {
+                color: black;
+               
+                        }
+        }
+    }
+}
+
+.redesSocialesIconos {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    .icono {
+        width: 30%;
+    }   
+}

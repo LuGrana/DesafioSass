@@ -1,0 +1,102 @@
+
+.body {
+    border: 2px solid rgb(77, 75, 75);
+    font-size: 16px;
+  }
+  
+
+
+/* section 1 imagen fluid BS apaisada*/
+.text-center-Lu {
+    display: flex;
+    width: fit-content;
+    border: 2px solid rgb(126, 122, 122);
+}
+
+/* main grilla gris. cancha de tenis*/
+
+.bodySedes {
+    background-color: #ffffff;  
+    border: 2px solid rgb(126, 122, 122);
+}
+
+.cuerpoCanchaTenis {
+    min-height: 100vh;
+    padding-top: 0.2%;
+    display: grid;
+    grid-template-areas: 
+    "columnaIzquierda barraArriba barraArriba columnaDerecha"
+    "columnaIzquierda cuadranteNO cuadranteNE columnaDerecha"
+    "columnaIzquierdaS cuadranteSO cuadranteSE columnaDerechaS"
+    "columnaIzquierdaS barraAbajo barraAbajo columnaDerechaS";
+    grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
+    grid-template-rows:320px 400px 400px 320px;
+    gap: 10px;
+}
+
+.barraArriba {
+    grid-area: barraArriba;
+    background-image: url(../images/fondopresentacioninvertida.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 2px solid rgb(126, 122, 122); 
+    display: flex;
+    flex-direction: column; 
+ }
+
+.columnaIzquierda {
+    grid-area: columnaIzquierda;
+    border: 2px solid rgb(126, 122, 122);  
+}    
+
+.columnaIzquierdaS {
+    grid-area: columnaIzquierdaS;
+    border: 2px solid rgb(126, 122, 122); 
+ }    
+
+
+.cuadranteNO {
+    grid-area: cuadranteNO;
+    border: 2px solid rgb(126, 122, 122);  
+}
+
+.cuadranteNO p {
+    grid-area: cuadranteNO;
+    border: 2px solid rgb(126, 122, 122);  
+}
+
+.cuadranteNE {
+    grid-area: cuadranteNE;
+    border: 2px solid rgb(126, 122, 122);  
+}
+
+.cuadranteSO {
+    grid-area: cuadranteSO;
+    border: 2px solid rgb(126, 122, 122);
+    text-align: center;
+    padding-top: 30%;
+}
+
+.cuadranteSE {
+    grid-area: cuadranteSE;
+    border: 2px solid rgb(126, 122, 122); 
+}
+
+.columnaDerecha {
+    grid-area:columnaDerecha;
+    border: 2px solid rgb(126, 122, 122); 
+}
+
+.columnaDerechaS {
+    grid-area:columnaDerechaS;
+    border: 2px solid rgb(126, 122, 122); 
+}
+
+.barraAbajo {
+    grid-area: barraAbajo;
+    border: 2px solid rgb(126, 122, 122); 
+    
+}
+/*fin de area delimitada con grid*/
+
+
