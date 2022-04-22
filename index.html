@@ -18,38 +18,37 @@
 <body>
 <!--header-->    
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: white">
             <div class="row">
-    <!--Logo de Santa Raqueta-->
-                <div class="col-3">
+                <div class="col p-3">
+                    <!--Logo de Santa Raqueta-->
                     <div class="logo">
                         <img src="./images/logo_large.png" alt="leyenda santa raqueta, q es una raqueta de tenis" class="img-fluid">
-                    </div>
-                </div>
+                    </div>                
+                </div>   
      
     <!--navbar-->           
-                <div class="col-6">
-                    <div class="nav">
+                <div class="col-8">
+                    
                         <nav>
                             <ul class="menuprincipal">
                 
                                 <li class="itemmenu"><a href="index.html">Inicio</a></li>
-                                <li class="itemmenu"><a href="escuelas.html">Escuelas</a></li>                        
-                                <li class="itemmenu"><a href="sedes.html">Sedes</a></li>
-                                <li class="itemmenu"><a href="Horarios.html">Horarios</a></li>
-                                <li class="itemmenu"><a href="Contacto.html">Contacto</a></li>
+                                <li class="itemmenu"><a href="#cuadranteNO">Escuelas</a></li>                        
+                                <li class="itemmenu"><a href="#sedesRantaRaqueta">Sedes</a></li>
+                                <li class="itemmenu"><a href="#formularioInsripcionSantaRaqueta">Contacto</a></li>
                 
                             </ul>
                         </nav>
-                    </div>
-            
+                    
                 </div>
-                <div class="col-3">
+                
+                <div class="col p-3">
                     <div class="redesSociales">
                         <ul class="redesSocialesIconos">
                     <!--link a correo electrónico (pongo contacto xq no se como linkear al correo de la propia computadora con la direccion de santa raqueta)-->
                              <li>
-                                <a href="https://mail.google.com/"mail><img src="images/logomail.jpg" alt="logo de sobre cerrado" class="icono"></a>
+                                <a href="https://mail.google.com/"mail><img src="images/iconomailgris.jpg" alt="logo de sobre cerrado" class="icono"></a>
                            </li>
                         
                     <!--linkea a whatsapp propio-->
@@ -59,17 +58,12 @@
                             
                     <!--link a instagram-->                            
                             <li>
-                                <a href="https://www.instagram.com/"><img src="images/logoinstagram.png" alt="logo instagram" class="icono"></a>  
+                                <a href="https://www.instagram.com/"><img src="images/iconoinstagram.png" alt="logo instagram" class="icono"></a>  
                         </ul>    
                     </div>
                 </div>
             </div>
         </div>
-    
-
-        
-        
-        
     </header>
 <!--fin de header-->
 
@@ -84,32 +78,22 @@
     <main class="cuerpoCanchaTenis">
         
         <!-- presentación con h1 y animación-->
-        <div class="barraArriba">  
+        <div class="barraArriba" style="background-image: url(images/fondopresentacioninvertida.jpg);">  
             <div class="pelotitaAnimada">
-                <img src="./images/pelota-de-tenis.gif" alt="pelotita de tenis dibujada blanco y negro" class="pelotitaAnimadaImagen">                
+                <img src="./images/pelota-de-tenis.gif" alt="pelotita de tenis dibujada blanco y negro" class="pelotitaAnimadaImagen">
             </div> 
                   
-            <div> 
+            <div class="container"> 
                 <h1 class="h1">Escuela de tenis Santa Raqueta</h1> 
                 <p>Fundamos Santa Raqueta en 2019, cuatro profesores que también somos familia: padres e hijos. 
                 La alegría de volver a unirnos en el trabajo, además de compartir la vocación y la pasión por el tenis, se refleja en nuestras clases, que convocan a familias enteras, para aprender y mejorar en la practica del tenis, en un ambietne cálido y a la vez desafiante.
                 Las clases grupales e individuales, para todas las edades y todos los niveles, apuntan a mejorar la técnica, el rendimiento físico, promover la participación en competencias y el disfrute de este hermoso deporte.
                 Santa Raqueta es una gran familia que no deja de crecer y que estará feliz de recibirte para transmitirte nuestra experiencia y amor por el tenis.</p>
             </div>  
-            
-            <div>
-
-
-
-
-
-            </div>
         </div>
-
       
              
-
-        <div class="columnaIzquierda">
+       <div class="columnaIzquierda">
         </div>
 
         <div class="columnaIzquierdaS">
@@ -124,48 +108,194 @@
         
     <!-- secciones clases-->  
         
-        <!--clases grupales-->
-        <div class="cuadranteNO">
-            <div class="card" style="width: 18rem;">
-                <img src="images/escueladedamas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Clases grupales</h5>
-                <p class="card-text">Para adultos de todas las edades, clases de mujeres, hombres o mixtas. Sumate como principiante intermedio o avanzado. Elegí tu grupo. </p>
-                <a href="#" class="btn btn-primary">Ver horarios de clases</a>
+        <!--clases grupales card y modal bootstrap-->
+        <div id="cuadranteNO">
+            <div class="row p-4">
+                <div class="col p-4">
+                    <div class="card">
+                        <img src="images/clasesgrupalesresized.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">De mujeres, Hombres o Mixtas. Todos los niveles.</p>
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                             Ver Horarios
+                            </button>
+  
+                         <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Horarios de Clases Individuales</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <p>ava va el horarios con sedes y profes. lo ideal seria poder elegir un horario y agendarlo. un form con calendario tal vez?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Agendar Clase</button>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
                 </div>
-            </div>
+            </div>                    
         </div>
-            
+
+         <!--clases Individuales card y modal bootstrap-->
         
-        <div class="cuadranteNE">  
-            <div class="card" style="width: 18rem;">
-                <img src="images/escueladedamas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Clases grupales</h5>
-                <p class="card-text">Para adultos de todas las edades, clases de mujeres, hombres o mixtas. Sumate como principiante intermedio o avanzado. Elegí tu grupo. </p>
-                <a href="#" class="btn btn-primary">Ver horarios de clases</a>
+        <div id="cuadranteNE"> 
+            <div class="row p-4">
+                <div class="col p-4">
+                    <div class="card">
+                        <img src="images/clasesindividualesrsized.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Todos los niveles.</p>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Ver Horarios
+                           </button>
+ 
+                        <!-- Modal -->
+                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                           <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Horarios de Clases Individuales</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                           <p>ava va el horarios con sedes y profes. lo ideal seria poder elegir un horario y agendarlo. un form con calendario tal vez?</p>
+                           </div>
+                           <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Agendar Clase</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                        </div>
+                      </div>
                 </div>
-            </div>         
+            </div>  
+        </div> 
+
+         <!--clases Escuelita card y modal bootstrap-->
+       
+        <div id="cuadranteSO">
+            <div class="row p-4">
+                <div class="col p-4">
+                    <div class="card" >
+                        <img src="images/universotenis.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Entrenamiento profesional.</p>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Ver Horarios
+                           </button>
+ 
+                        <!-- Modal -->
+                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                           <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Horarios de Clases Individuales</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                           <p>ava va el horarios con sedes y profes. lo ideal seria poder elegir un horario y agendarlo. un form con calendario tal vez?</p>
+                           </div>
+                           <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Agendar Clase</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                        </div>
+                      </div>
+                </div>
+            </div>              
         </div>
        
-        <div class="cuadranteSO">
-            <div class="card" style="width: 18rem;">
-                <img src="images/escueladedamas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Clases grupales</h5>
-                <p class="card-text">Para adultos de todas las edades, clases de mujeres, hombres o mixtas. Sumate como principiante intermedio o avanzado. Elegí tu grupo. </p>
-                <a href="" class="btn btn-primary">Ver horarios de clases</a>
+         <!--clases Alta competición card y modal bootstrap-->
+
+        <div id="cuadranteSE">
+            <div class="row p-4">
+                <div class="col p-4">
+                    <div class="card" >
+                        <img src="images/escuelita.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">A partir de los 4 años.</p>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Ver Horarios
+                           </button>
+ 
+                        <!-- Modal -->
+                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                           <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Horarios de Clases Individuales</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                           <p>ava va el horarios con sedes y profes. lo ideal seria poder elegir un horario y agendarlo. un form con calendario tal vez?</p>
+                           </div>
+                           <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Agendar Clase</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                      </div>
+                    </div>
                 </div>
-            </div>
+            </div>  
         </div>
-       
-            
-        <div class="cuadranteSE">
-        </div>
+    
    
-         
+    
         <div class="barraAbajo">
-        </div>   
+            <div id="formularioInsripcionSantaRaqueta"> 
+                <div class="row p-2">
+                    <div>
+                        <h6>Sumate a Santa Raqueta</h6>
+                    </div>
+                <div class="col p-4">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">¿Cómo te llamás?</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                      </div>
+                      <label for="exampleFormControlInput1" class="form-label">¿Cuál es tu Email de contacto?</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="col p-4">  
+                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                         <option selected>¿Qué Tipo de Clase Buscás?</option>
+                        <option value="1">Individual</option>
+                        <option value="2">Grupal</option>
+                        <option value="3">Alta Competición</option>
+                        <option value="3">Escuelita</option>
+                    </select>       
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>¿Qué nivel te interesa?</option>
+                        <option value="1">Nunca agarré una raqueta</option>
+                        <option value="2">Algo se.</option>
+                        <option value="3">Ya juego</option>
+                        <option value="3">Soy crack</option>
+                    </select>
+                      </div>
+                </div>
+                </div> 
+            </div>
+        </div>  
+    
       
     </main>    
     <!-- fin de la seccion grilla gridd--> 
@@ -186,6 +316,36 @@
     </section>
       
     <!-- fin de seccion Inscripcion-->
+
+
+    <!-- Sedes y Mapas-->
+
+    <div id="sedesRantaRaqueta">
+
+    <div class="container-fluid" style="background-color:grey">
+        <div>
+            <h6>Estas son nuestras sedes</h6>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Sede Pasco</p>
+                <p>Dirección: Cochabamba 2258, CABA</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.1976159432816!2d-58.39901298591347!3d-34.62444608045416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1f0700810d%3A0x486ae7ce5de2402f!2sPasco%20Tenis!5e0!3m2!1sen!2sar!4v1647212820435!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"class="mapaSedes"></iframe>
+            </div>
+                        
+            <div class="col-6 p-6">
+                <p>Sede Parroquial Sagrado Corazón</p>
+                <p>Dirección: California 3060, CABA</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.190589507106!2d-58.3928565859125!3d-34.6498893804475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb5cabf34839%3A0x144ca2342265d78a!2sAteneo%20Parroquial%20Sagrado%20Corazon!5e0!3m2!1sen!2sar!4v1647213403099!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mapaSedes"></iframe>
+
+            </div>
+    </div>
+    </div>
+                
+                   
+   
+
+    
 
       
     <!--imagen de desarrollador-->

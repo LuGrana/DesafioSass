@@ -2,23 +2,20 @@
 .body {
     border: 2px solid rgb(77, 75, 75);
     font-size: 16px;
+    background-color: black;
   }
   
 
 
 /* section 1 imagen fluid BS apaisada*/
 .text-center-Lu {
-    display: flex;
-    width: fit-content;
-    border: 2px solid rgb(126, 122, 122);
+    
+    margin-top: 0.2%;
 }
 
 /* main grilla gris. cancha de tenis*/
 
-.bodySedes {
-    background-color: #ffffff;  
-    border: 2px solid rgb(126, 122, 122);
-}
+
 
 .cuerpoCanchaTenis {
     min-height: 100vh;
@@ -30,19 +27,44 @@
     "columnaIzquierdaS cuadranteSO cuadranteSE columnaDerechaS"
     "columnaIzquierdaS barraAbajo barraAbajo columnaDerechaS";
     grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
-    grid-template-rows:320px 400px 400px 320px;
-    gap: 10px;
+    grid-template-rows:310px 400px 400px 310px;
+    gap: 0.5%;
 }
 
 .barraArriba {
     grid-area: barraArriba;
-    background-image: url(../images/fondopresentacioninvertida.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
     border: 2px solid rgb(126, 122, 122); 
-    display: flex;
-    flex-direction: column; 
  }
+
+ 
+.pelotitaAnimada {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;  
+    margin-top: 4%;
+    margin-left: 40%;
+    position: absolute;      
+}
+
+.pelotitaAnimadaImagen {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;  
+}
+
+.pelotitaAnimada {
+    animation: pelotitaAnimada 3s
+}
+
+@keyframes pelotitaAnimada {
+    30% {        
+        transform: rotate(-8deg) translateX(-300px) scale(6);
+    }
+    70% {        
+        transform: rotate(45deg) translateX(650px) scale(3)
+    }
+}
+
 
 .columnaIzquierda {
     grid-area: columnaIzquierda;
@@ -55,31 +77,29 @@
  }    
 
 
-.cuadranteNO {
+#cuadranteNO {
     grid-area: cuadranteNO;
     border: 2px solid rgb(126, 122, 122);  
 }
 
-.cuadranteNO p {
+#cuadranteNO {
     grid-area: cuadranteNO;
     border: 2px solid rgb(126, 122, 122);  
 }
 
-.cuadranteNE {
+#cuadranteNE {
     grid-area: cuadranteNE;
     border: 2px solid rgb(126, 122, 122);  
 }
 
-.cuadranteSO {
+#cuadranteSO {
     grid-area: cuadranteSO;
     border: 2px solid rgb(126, 122, 122);
-    text-align: center;
-    padding-top: 30%;
 }
 
-.cuadranteSE {
+#cuadranteSE {
     grid-area: cuadranteSE;
-    border: 2px solid rgb(126, 122, 122); 
+    border: 2px solid rgb(126, 122, 122);  
 }
 
 .columnaDerecha {

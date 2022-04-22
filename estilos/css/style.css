@@ -6,47 +6,66 @@
   box-sizing: border-box;
 }
 
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Square Peg', cursive;*/
 /*Colores*/
 /*Tamaños de fuentes*/
 /*Font-Size*/
 .body {
   border: 2px solid rgb(77, 75, 75);
   font-size: 16px;
+  background-color: black;
 }
 
 /* section 1 imagen fluid BS apaisada*/
 .text-center-Lu {
-  display: flex;
-  width: fit-content;
-  border: 2px solid rgb(126, 122, 122);
+  margin-top: 0.2%;
 }
 
 /* main grilla gris. cancha de tenis*/
-.bodySedes {
-  background-color: #ffffff;
-  border: 2px solid rgb(126, 122, 122);
-}
-
 .cuerpoCanchaTenis {
   min-height: 100vh;
   padding-top: 0.2%;
   display: grid;
   grid-template-areas: "columnaIzquierda barraArriba barraArriba columnaDerecha" "columnaIzquierda cuadranteNO cuadranteNE columnaDerecha" "columnaIzquierdaS cuadranteSO cuadranteSE columnaDerechaS" "columnaIzquierdaS barraAbajo barraAbajo columnaDerechaS";
   grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
-  grid-template-rows: 320px 400px 400px 320px;
-  gap: 10px;
+  grid-template-rows: 310px 400px 400px 310px;
+  gap: 0.5%;
 }
 
 .barraArriba {
   grid-area: barraArriba;
-  background-image: url(../images/fondopresentacioninvertida.jpg);
-  background-repeat: no-repeat;
-  background-position: right;
   border: 2px solid rgb(126, 122, 122);
-  display: flex;
-  flex-direction: column;
 }
 
+.pelotitaAnimada {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-top: 4%;
+  margin-left: 40%;
+  position: absolute;
+}
+
+.pelotitaAnimadaImagen {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.pelotitaAnimada {
+  animation: pelotitaAnimada 3s;
+}
+
+@keyframes pelotitaAnimada {
+  30% {
+    transform: rotate(-8deg) translateX(-300px) scale(6);
+  }
+  70% {
+    transform: rotate(45deg) translateX(650px) scale(3);
+  }
+}
 .columnaIzquierda {
   grid-area: columnaIzquierda;
   border: 2px solid rgb(126, 122, 122);
@@ -57,29 +76,27 @@
   border: 2px solid rgb(126, 122, 122);
 }
 
-.cuadranteNO {
+#cuadranteNO {
   grid-area: cuadranteNO;
   border: 2px solid rgb(126, 122, 122);
 }
 
-.cuadranteNO p {
+#cuadranteNO {
   grid-area: cuadranteNO;
   border: 2px solid rgb(126, 122, 122);
 }
 
-.cuadranteNE {
+#cuadranteNE {
   grid-area: cuadranteNE;
   border: 2px solid rgb(126, 122, 122);
 }
 
-.cuadranteSO {
+#cuadranteSO {
   grid-area: cuadranteSO;
   border: 2px solid rgb(126, 122, 122);
-  text-align: center;
-  padding-top: 30%;
 }
 
-.cuadranteSE {
+#cuadranteSE {
   grid-area: cuadranteSE;
   border: 2px solid rgb(126, 122, 122);
 }
@@ -102,28 +119,77 @@
 /*fin de area delimitada con grid*/
 /*header Santa Raqueta*/
 /*navbar*/
-.nav ul {
+header {
+  border: solid black 1px;
+  padding-bottom: 0.5%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+header nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  font-family: "Nunito", sans-serif;
 }
-.nav ul li {
-  font-size: 1.25rem;
-  display: flex;
-  padding: 2px;
-  max-width: 100%;
+header nav ul li {
+  padding: 15px;
+  font-size: 1.1rem;
 }
-.nav ul li .itemmenu {
-  color: black;
+header nav ul li a {
+  color: rgb(17, 15, 15);
+  text-shadow: 0px 4px 7px #777472;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .redesSocialesIconos {
   display: flex;
   flex-direction: row;
   list-style: none;
+  align-items: center;
 }
 .redesSocialesIconos .icono {
-  width: 30%;
+  max-width: 40%;
 }
+
+/* seccion 3*/
+.inscripcion {
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  text-align: center;
+}
+
+.inscripcion:hover {
+  transition: all 1s;
+  transform: scale(1.3);
+}
+
+.pelota {
+  width: 55px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.barraArriba {
+  grid-area: barraArriba;
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 2px solid rgb(126, 122, 122);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+}
+
+/* fin seccion 3*/
 
 /*# sourceMappingURL=style.css.map */

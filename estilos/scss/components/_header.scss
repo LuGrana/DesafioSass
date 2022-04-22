@@ -1,32 +1,54 @@
+
 /*header Santa Raqueta*/
 /*navbar*/
 
-.nav {
-   
-    ul {
+header{
+    border:solid black 1px;
+    padding-bottom: 0.5%;
+
+    nav {  
         display: flex;
-        flex-direction: row;
-        list-style: none;
-        
-        li {
-            font-size: 1.25rem;
+        align-items: center;  
+        justify-content: center;
+        align-content: space-between;    
+         
+        ul {
             display: flex;
-            
-            padding: 2px;
-            max-width: 100%;
-            .itemmenu {
-                color: black;
+            flex-direction: row;
+            list-style: none;
+            font-family: 'Nunito', sans-serif;
                
-                        }
+                
+            li {
+                padding: 15px;
+                font-size: 1.1rem;
+                
+
+                a {
+                    color: rgb(17, 15, 15);  
+                    text-shadow: 0px 4px 7px #777472; 
+
+                    &:hover {
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
         }
     }
 }
 
 .redesSocialesIconos {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    .icono {
-        width: 30%;
-    }   
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+    
+                    .icono{
+                        max-width: 40%;
+                        
+                    }
+   
+    
 }
