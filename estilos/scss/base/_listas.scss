@@ -1,0 +1,58 @@
+
+/*Colores*/
+$colores:
+grey,
+white,
+green,
+orange,
+black;
+
+
+/*Tamaños de fuentes*/
+$sizes:
+40px,
+35px,
+30px,
+25px,
+20px,
+16px;
+
+
+
+/*Font-Family*/
+$font-family:
+'Dancing Script', cursive,
+'Square Peg', cursive,
+'Nunito', sans-serif;
+
+
+
+
+
+h1{
+    font-family: nth($font-family,1);
+    font-size:nth($sizes, 1) ;
+    color: nth($colores, 5);
+}
+h2 {
+    font-family: nth($font-family,2);
+    font-size:nth($sizes, 2) ;
+    color: nth($colores, 5);
+}
+h3  {
+    font-family: nth($font-family,2);
+    font-size:nth($sizes, 3) ;
+    color: nth($colores, 1);
+}
+h4 {
+    font-family: nth($font-family,1);
+    font-size:nth($sizes, 4) ;
+    color: nth($colores, 5);}
+h5 {
+    font-family: nth($font-family,2);
+    font-size:nth($sizes, 5) ;
+    color: nth($colores, 5);}
+h6 {
+    font-family: nth($font-family,2);
+    font-size:nth($sizes, 6) ;
+    color: nth($colores, 5);}

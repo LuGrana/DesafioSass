@@ -1,0 +1,22 @@
+@mixin tamaños ($valor) {
+    transform: $valor;   
+}
+
+@mixin flexBox ($flex) {
+    display: $flex;
+    justify-content: $flex;
+    align-items: $flex;    
+}
+
+@mixin fondos ($color) {
+    background-color: $color;
+    border: $color;
+    
+}
+
+@mixin estilosFuentes ($valorFS) {
+    font-size: $valorFS ;
+    font-family: $valorFS;
+    text-decoration: $valorFS;
+    color: $valorFS;
+}
