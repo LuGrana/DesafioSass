@@ -28,34 +28,3 @@ $font-family:
 
 
 
-
-
-h1{
-    font-family: nth($font-family,1);
-    font-size:nth($sizes, 1) ;
-    color: nth($colores, 2);
-}
-h2 {
-    font-family: nth($font-family,3);
-    font-size:nth($sizes, 1) ;
-    color: nth($colores, 2);
-}
-h3  {
-    font-family: nth($font-family,3);
-    font-size:nth($sizes, 1) ;
-    color: nth($colores, 2);
-}
-h4 {
-    font-family: nth($font-family,3);
-    font-size:nth($sizes, 2) ;
-    color: nth($colores, 5);}
-h5 {
-    font-family: nth($font-family,3);
-    font-size:nth($sizes, 3) ;
-    color: nth($colores, 5);
-}
-h6 {
-    font-family: nth($font-family,3);
-    font-size:nth($sizes, 3) ;
-    color: nth($colores, 5);
-}

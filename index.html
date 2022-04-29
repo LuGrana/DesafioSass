@@ -128,7 +128,8 @@
     </div>
 </section>  
 
-              
+            
+
 <!-- informacion de clases individuales grupales o escuelita. cards con link a horarios y reserva de clases-->   
 
 <section class="sectionClases">
@@ -263,7 +264,7 @@
             <div>
                 <h3>Estas son nuestras sedes</h3>
             </div>
-<!-- Sede pasco-->
+<!-- Sede pasco  y sagrado corazón con mapas--> -->
             <div class="row d-flex justify-content-center">
                 <div class="col">
                     <h5>Sede Pasco: Cochabamba 2258, CABA</h5>
@@ -287,49 +288,107 @@
     </Section>
 
 
- <!-- Sede sagrad corazón-->               
+              
     <section class="sectionFormulario">
         <div class="container">
             <div id="formularioInsripcionSantaRaqueta"> 
                 <div class="row">
-                    <div>
                     <h3>Sumate a Santa Raqueta</h3>
-                    </div>
+                </div>
             
                 <div class="row">
                     
-                        <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">¿Cómo te llamás?</label>
-                        <input type="name and surname" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
-                        </div>
-                        <label for="exampleFormControlInput1" class="form-label">¿Cuál es tu Email de contacto?    
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"><h6>¿Cómo te llamás?</h6></label>
+                        <input type="name and surname" class="form-control" id="exampleFormControlInput1" placeholder= "nombre completo">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"><h6>Email</h6>
                         </label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    
+                    </div>
+                </div>
                   
-                     
-                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-                        <option selected>¿Qué Tipo de Clase Buscás?</option>
+                <div class="row">        
+                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected><h6>¿Qué Clase Buscás?</h6></option>
                         <option value="1">Individual</option>
                         <option value="2">Grupal</option>
                         <option value="3">Alta Competición</option>
                         <option value="3">Escuelita</option>
-                        </select>       
-                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>¿Qué nivel te interesa?</option>
+                    </select>  
+                </div>  
+                
+                <div class="row">  
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected><h6>¿Qué nivel?</h6></option>
                         <option value="1">Nunca agarré una raqueta</option>
                         <option value="2">Algo se.</option>
                         <option value="3">Ya juego</option>
                         <option value="3">Soy crack</option>
-                        </select>
-                    
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Enviar</button>
                 </div>
             </div> 
         </div>
     </section>  
 
+    <section class="formulario2">
+    
+    <form action="" method="POST" class="speaker-form">
+        <div class="form-row">
+            <label for="fullname">Nombre Completo</label>
+            <input type="text" id="fullname" placeholder="Ej:Alejandra Santos" name="nombre">
+        </div> 
+
+        <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="Ej:asantos@gmail.com" name="email" required>
+        </div> 
+
+        <fieldset>
+            <legend>¿Qué tipo de clase Buscás?</legend>
+            <input type="radio" name="clasesGrupales" id="clasesGrupales" required>
+            <label for="clasesGrupales">Clases Grupales</label>
+
+            <input type="radio" name="clasesIndividuales" id="clasesIndividuales" required>
+            <label for="clasesIndividuales">Clases Individuales</label>
+            
+            <input type="radio" name="escuelita" id="escuelita" required>
+            <label for="escuelita">Escuelita</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Ya tomaste clases antes?</legend>
+            <input type="radio" name="nivelPrincipiante" id="nivelPrincipiante" required>
+            <label for="nivelPrincipiante">Ninguna/muy pocas</label>
+
+            <input type="radio" name="nivelPrincipiante" id="nivelPrincipiante" required>
+            <label for="nivelPrincipiante">Si tomé, algo juego</label>
+            
+            <input type="radio" name="nivelAvanzado" id="nivelAvanzado" required>
+            <label for="nivelAvanzado">Tengo muchas experiencia, Soy crack</label>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="Comentarios">¿Qué buscas de las clases?</label>
+            <textarea name="Comentarios" id="Comentarios"></textarea>
+        </div> 
+
+        <div class="form-row">
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
 
 
+</section>
 
 <!-- pelota animada que lleva a inscripcion-->
 <!--Animación Pelota-->
