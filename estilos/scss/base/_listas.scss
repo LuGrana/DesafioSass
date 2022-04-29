@@ -1,4 +1,5 @@
 
+@import "../base/typography";
 /*Colores*/
 $colores:
 grey,
@@ -10,12 +11,12 @@ black;
 
 /*Tamaños de fuentes*/
 $sizes:
-40px,
-35px,
-30px,
-25px,
-20px,
-16px;
+2.5rem,
+2rem,
+1.8rem,
+1.5rem,
+1rem,
+0.95rem;
 
 
 
@@ -32,27 +33,29 @@ $font-family:
 h1{
     font-family: nth($font-family,1);
     font-size:nth($sizes, 1) ;
-    color: nth($colores, 5);
+    color: nth($colores, 2);
 }
 h2 {
-    font-family: nth($font-family,2);
-    font-size:nth($sizes, 2) ;
-    color: nth($colores, 5);
+    font-family: nth($font-family,3);
+    font-size:nth($sizes, 1) ;
+    color: nth($colores, 2);
 }
 h3  {
-    font-family: nth($font-family,2);
-    font-size:nth($sizes, 3) ;
-    color: nth($colores, 1);
+    font-family: nth($font-family,3);
+    font-size:nth($sizes, 1) ;
+    color: nth($colores, 2);
 }
 h4 {
-    font-family: nth($font-family,1);
-    font-size:nth($sizes, 4) ;
+    font-family: nth($font-family,3);
+    font-size:nth($sizes, 2) ;
     color: nth($colores, 5);}
 h5 {
-    font-family: nth($font-family,2);
-    font-size:nth($sizes, 5) ;
-    color: nth($colores, 5);}
+    font-family: nth($font-family,3);
+    font-size:nth($sizes, 3) ;
+    color: nth($colores, 5);
+}
 h6 {
-    font-family: nth($font-family,2);
-    font-size:nth($sizes, 6) ;
-    color: nth($colores, 5);}
+    font-family: nth($font-family,3);
+    font-size:nth($sizes, 3) ;
+    color: nth($colores, 5);
+}

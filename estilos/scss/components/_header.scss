@@ -1,21 +1,27 @@
-@import "../base/variables";
-@import "../base/mixin";
+
+
+
 
 /*header Santa Raqueta*/
 
 header{
     position: sticky;
-    top: 0;
+    z-index: 10;
+    top: 0;   
     background-color: $colorFondo;
+    padding-top: 0.8%;
+    border: $border-marcoSection;
+    
     
 
-
-    nav {  
+    
+   nav {  
         display: flex;
         align-items: center;  
         justify-content: center;
        
         ul {
+           
             display: flex;
             flex-direction: row;
             list-style: none;
@@ -24,8 +30,7 @@ header{
                
                 
             li {
-                display: flex;
-               
+                display: flex;               
                 padding: 0 30px;
                 font-size: 1.3rem;
                 
@@ -43,11 +48,9 @@ header{
             }
         }
     }
-}
 
-header {
 
-    .redesSocialesIconos {
+.redesSocialesIconos {
         display: flex;
         flex-direction: row;
         list-style: none;

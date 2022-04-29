@@ -1,22 +1,24 @@
-@mixin tamaños ($valor) {
-    transform: $valor;   
+
+@mixin flexboxaply($display,$justifycontent, $alignintems) {
+    display: $display;
+    justify-content: $justifycontent;
+    align-items: $alignintems;   
 }
 
-@mixin flexBox ($flex) {
-    display: $flex;
-    justify-content: $flex;
-    align-items: $flex;    
+
+
+
+
+@mixin mapadecolores ($bg-color, $bordercolor, $colorP) {
+    background-color: $bg-color;
+    border-color: $bordercolor;
+    color: $colorP;
 }
 
-@mixin fondos ($color) {
-    background-color: $color;
-    border: $color;
-    
-}
+@mixin transformar($propiedad) {
+    -webkit-transform: $propiedad;
+    -ms-transform: $propiedad;
+    transform: $propiedad;
+  }
 
-@mixin estilosFuentes ($valorFS) {
-    font-size: $valorFS ;
-    font-family: $valorFS;
-    text-decoration: $valorFS;
-    color: $valorFS;
-}
+  
