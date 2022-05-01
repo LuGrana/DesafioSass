@@ -1,6 +1,6 @@
 $marcoGeneral: (
-    border-marcoGeneral: solid 1px orange,
-    padding-marcoGeneral: 1%,
+    border-marcoGeneral: solid 10px orange,
+    padding-marcoGeneral: 5%,
     bg-color-marcoGeneral:rgba(31, 27, 27, 0.919),
     margin-marcoGeneral: 1%,
 );
@@ -15,7 +15,7 @@ $margin-marcoGeneral: map-get($marcoGeneral,margin-marcoGeneral);
 $marcoSection: (
     border-marcoSection: dotted 2px green,
     padding-marcoSection:5%,
-    bg-color-marcoSection:rgb(123, 80, 32),
+    bg-color-marcoSection:rgb(56, 31, 3),
     
 );
 

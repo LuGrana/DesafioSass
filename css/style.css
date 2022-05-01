@@ -1,22 +1,30 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@200&family=Square+Peg&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@200&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Assistant:wght@200&family=Dancing+Script:wght@600;700&family=Nunito:wght@200&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Assistant:wght@200&family=Dancing+Script:wght@600;700&family=Nunito:wght@200&family=Square+Peg&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*font-family: 'Dancing Script', cursive;
+/*
+font-family: 'Arima Madurai', cursive;
+font-family: 'Assistant', sans-serif;
+font-family: 'Dancing Script', cursive;
 font-family: 'Nunito', sans-serif;
-font-family: 'Square Peg', cursive;*/
+font-family: 'Square Peg', cursive;
+*/
 /*Colores*/
 /*Tamaños de fuentes*/
 /*Font-Familye*/
 /*paquetes de propiedades que pueden utilizarse en diferentes lugares*/
-/*font-family: 'Dancing Script', cursive;
+/*
+font-family: 'Arima Madurai', cursive;
+font-family: 'Assistant', sans-serif;
+font-family: 'Dancing Script', cursive;
 font-family: 'Nunito', sans-serif;
-font-family: 'Square Peg', cursive;*/
+font-family: 'Square Peg', cursive;
+*/
 /*Colores*/
 /*Tamaños de fuentes*/
 /*Font-Family*/
@@ -25,137 +33,222 @@ header {
   position: sticky;
   z-index: 10;
   top: 0;
-  background-color: white;
   padding-top: 0.8%;
-  border: dotted 2px green;
+  padding: 0% 1%;
+  border: 1px solid rgb(0, 26, 255);
+  margin: 0% 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 244, 232, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 header nav {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 1% 0 0 0;
+  border: 0;
+  margin: 0;
 }
 header nav ul {
   display: flex;
+  justify-content: center;
+  align-items: end;
   flex-direction: row;
   list-style: none;
-  font-family: "Nunito", sans-serif;
-  justify-content: flex-end;
 }
 header nav ul li {
   display: flex;
   padding: 0 30px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 header nav ul li a {
-  color: rgb(17, 15, 15);
-  text-shadow: 0px 4px 7px #777472;
+  color: rgb(49, 45, 45);
+  text-shadow: 0px 4px 7px #54755c;
+  font-family: "Nunito", sans-serif;
+  text-emphasis-color: orange;
 }
 header nav ul li a:hover {
   text-decoration: none;
   font-size: 1.2rem;
 }
+header .css-button-fully-rounded--black {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 0, 8rem 1.3 rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #212529;
+  background: #212529;
+}
+header .css-button-fully-rounded--black:hover {
+  background: #fff;
+  color: #212529;
+}
 header .redesSocialesIconos {
   display: flex;
+  justify-content: center;
+  align-items: end;
   flex-direction: row;
   list-style: none;
-  align-items: center;
 }
-header .redesSocialesIconos .icono {
-  max-width: 40%;
+header .redesSocialesIconos .redessociales {
+  padding: 1% 2%;
+  border: 0;
+  margin: 5%;
+}
+header .redesSocialesIconos .redessociales a {
+  color: rgb(217, 87, 40);
 }
 
 body {
-  margin: 1.5% 2%;
+  margin: 1% 6%;
+  background-color: #edf0ec;
 }
 
 h1 {
   font-family: "Dancing Script";
   font-size: 2.5rem;
-  color: white;
 }
 
 h2 {
-  font-family: "Square Peg";
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
   font-size: 2.5rem;
-  color: white;
+  color: rgb(34, 34, 34);
 }
 
 h3 {
   font-family: "Square Peg";
   font-size: 2.5rem;
-  color: grey;
 }
 
 h4 {
   font-family: "Square Peg";
-  font-size: 2rem;
-  color: black;
+  font-size: 2.3rem;
 }
 
 h5 {
   font-family: "Square Peg";
-  font-size: 1.8rem;
-  color: black;
+  font-size: 2rem;
 }
 
 h6 {
   font-family: "Square Peg";
-  font-size: 1.8rem;
-  color: black;
+  font-size: 2rem;
 }
 
+/* leyenda apaisada h1*/
 .leyendaSR {
-  border: solid 1px orange;
-  background-color: rgba(31, 27, 27, 0.919);
+  padding: 1% 0% 1% 5%;
+  border: 1% solid rgb(230, 229, 228);
+  margin: 0% 1%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  background: rgb(13, 13, 13);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.imagenapaisada {
-  border: solid 1px orange;
+/* Carousel de imagenes con leyenda*/
+.carousel, .carousel-inner > .carousel-item > img {
+  height: 50%;
 }
 
-.sectionPresentation {
-  border: dotted 2px green;
-  padding: 1%;
-  background-color: rgb(123, 80, 32);
+/* pagina presentacion*/
+.sectionPresentation, .sectionClases {
+  padding: 2% 2% 2% 2%;
+  border: 0;
+  margin: 0% 1%;
+  color: rgb(30, 27, 27);
+  background: rgb(40, 40, 40);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.sectionPresentation .col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sectionPresentation .estiloPresentacion, .sectionClases .estiloPresentacion {
+  color: rgb(217, 178, 138);
+  background: rgba(21, 176, 184, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-left: 2%;
+  margin-top: 2%;
+}
+.sectionPresentation .estiloPresentacion2, .sectionClases .estiloPresentacion2 {
+  color: aliceblue;
+  padding: 3%;
+}
+.sectionPresentation .estiloPresentacion2 p, .sectionClases .estiloPresentacion2 p {
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  padding: 0.3rem;
+  text-align: justify;
 }
 
+/* informacion sobre las clases individuales, grupales e infantiless*/
 .sectionClases {
-  padding: 1%;
-  border: solid 1px orange;
+  padding: 2%;
+  border: 0;
+  margin: 1% 1%;
+  background: rgba(212, 185, 116, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.sectionClases .col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sectionClases .clasesTitulos {
+  padding: 4%;
+  text-align: center;
+}
+.sectionClases .borderCard {
+  background: rgba(200, 203, 201, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.sectionClases .borderCard img {
+  padding: 10%;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
 }
 
-#sectionSedes {
-  padding: 1%;
-  border: dotted 2px green;
-  background-color: rgb(123, 80, 32);
-}
-#sectionSedes .col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* direccion y mapas de las sedes*/
+.sectionSedes {
+  padding: 5%;
+  border: 0;
+  margin: 15% 50%;
 }
 
 .sectionFormulario {
-  padding: 1%;
-  border: solid 1px orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5% 30%;
-  line-height: 1.3rem;
+  padding: 5%;
+  background: rgba(216, 223, 217, 0.35);
+  background: rgba(216, 223, 217, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* animacion para comienzo-animacion para texto inscribite*/
@@ -215,8 +308,8 @@ h6 {
 /*formulario2*/
 .formulario2 {
   border: dotted 2px green;
-  padding: 1%;
-  background-color: rgb(123, 80, 32);
+  padding: 5%;
+  background-color: rgb(56, 31, 3);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,18 @@
 
-@mixin flexboxaply($display,$justifycontent, $alignintems) {
+@mixin flexboxaply($display,$justifycontent,$alignintems) {
     display: $display;
     justify-content: $justifycontent;
-    align-items: $alignintems;   
+    align-items: $alignintems;  
 }
+
+@mixin borderandpadding ($padding-sr,$border-sr, $margin) {
+    padding: $padding-sr;
+    border: $border-sr;
+    margin: $margin;
+    
+}
+
+
 
 
 

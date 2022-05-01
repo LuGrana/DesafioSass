@@ -1,88 +1,149 @@
 body {
-    margin: 1.5% 2%;
-    
+margin: 1% 6%;
+background-color: #edf0ec;
 }
-
-
 
 h1{
     font-family: nth($font-family,1);
     font-size:nth($sizes, 1) ;
-    color: nth($colores, 2);
 }
+
 h2 {
-    font-family: nth($font-family,3);
+    font-family: 'Nunito', sans-serif; 
+    font-weight: bold;
     font-size:nth($sizes, 1) ;
-    color: nth($colores, 2);
+    color: rgb(34, 34, 34);
 }
+
 h3  {
     font-family: nth($font-family,3);
     font-size:nth($sizes, 1) ;
-    color: nth($colores, 1);
 }
+
 h4 {
     font-family: nth($font-family,3);
     font-size:nth($sizes, 2) ;
-    color: nth($colores, 5);}
+}
+
 h5 {
     font-family: nth($font-family,3);
     font-size:nth($sizes, 3) ;
-    color: nth($colores, 5);
 }
+
 h6 {
     font-family: nth($font-family,3);
     font-size:nth($sizes, 3) ;
-    color: nth($colores, 5);
 }
 
+
+/* leyenda apaisada h1*/
 
 .leyendaSR{
-    border: $border-marcoGeneral;
-    background-color: $bg-color-marcoGeneral;  
-    @include flexboxaply(flex,center,center);
+    @include borderandpadding (1% 0% 1% 5%,1% solid rgb(230, 229, 228), 0% 1%);
+    @include flexboxaply (flex,center,center);
+    color: white;
+    background: rgba( 13, 13, 13, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );   
 }
    
+/* Carousel de imagenes con leyenda*/
 
-.imagenapaisada {
-    border: $border-marcoGeneral;
+.carousel, .carousel-inner > .carousel-item > img {
+    height: 50%;
+    }
 
-}
 
+/* pagina presentacion*/
 
-.sectionPresentation {
-    border: $border-marcoSection;
-    padding: $padding-marcoGeneral;
-    background-color: $bg-color-marcoSection;
-     .col {
-        @include flexboxaply(flex,center,center);
-     }
+.sectionPresentation, .sectionClases {
     
-}
+    @include borderandpadding (2% 2% 2% 2%,0,0% 1%);
+    color: rgb(30, 27, 27);
+    background: rgb(40, 40, 40);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );     
+    
+            .estiloPresentacion{
+            color: rgb(217, 178, 138);
+            background: rgba(21, 176, 184, 0.8);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 16px );
+            -webkit-backdrop-filter: blur( 16px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding-left: 2%;
+            margin-top: 2%;
+            }
+            .estiloPresentacion2 {
+                color: aliceblue;
+                padding: 3%;
+               p { font-size: 1.5rem;
+                 font-family: 'Nunito', sans-serif;
+                 padding: 0.3rem;
+                 text-align: justify;
+               }
+            }
 
+    
+    }
+
+    /* informacion sobre las clases individuales, grupales e infantiless*/
+     
 .sectionClases {
-    padding: $padding-marcoGeneral;
-    border: $border-marcoGeneral;
-    .col {
-        @include flexboxaply(flex,center,center);
-     }
+    @include borderandpadding (2%,0,1% 1%);
+    background: rgba( 212, 185, 116, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        .clasesTitulos {
+            padding: 4%;
+            text-align: center;
+        }
+        .borderCard {
+        background: rgba( 200, 203, 201, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 16px );
+        -webkit-backdrop-filter: blur( 16px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+       
+           
+            img {
+               padding: 10%;
+               width: 100%;
+               height: auto;
+               border-radius: 10%;
+            }
+        }
 
 }
 
-#sectionSedes {
-    padding: $padding-marcoGeneral;
-    border: $border-marcoSection;
-    background-color: $bg-color-marcoSection;
-   .col {
-        @include flexboxaply(flex,center,center,);
-     }
+/* direccion y mapas de las sedes*/
+.sectionSedes {
+    @include borderandpadding (5%,0,15% 50%);
+
 }
+
 
 .sectionFormulario {
     padding: $padding-marcoGeneral;
-    border: $border-marcoGeneral;
-    @include flexboxaply(flex,center,center);
-    padding: 5% 30%;
-    line-height: 1.3rem;
+    background: rgba( 216, 223, 217, 0.35 );
+    background: rgba( 216, 223, 217, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+ 
+    
 }
 
 
