@@ -1,7 +1,5 @@
 
 
-
-
 /*header Santa Raqueta*/
 
 header{
@@ -72,22 +70,4 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       }
 
 
-
-.redesSocialesIconos {
-    @include flexboxaply (flex,center,end);
-    flex-direction: row;
-    list-style: none;
-   
-
-    .redessociales {
-        @include borderandpadding (1% 2%, 0, 5%);
-       
-        a  {
-            color: rgb(217, 87, 40);  
-           
-           
-         }
     }
-}
-}
-    
